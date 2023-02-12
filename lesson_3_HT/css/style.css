@@ -1,0 +1,102 @@
+@import url("reset.css");
+
+body{
+    color:antiquewhite;
+}
+
+.title{
+    color: rgb(49, 122, 122);
+}
+
+.header_container .hr{
+    border: none;
+    height: 3px;
+    color: rgba(66, 158, 158, 0.264);
+    background-color: rgba(51, 135, 135, 0.693);
+}
+
+.header_main_text>p{
+    color:rgb(29, 153, 220)
+}
+
+.main_nav>li,.nav_container .title{
+    color: rgb(139, 0, 0);
+}
+
+.main_nav>li>a{
+    color: rgb(198, 77, 77);
+}
+
+.main_nav>li+li>a{
+    color:rgb(240, 97, 97);
+}
+.main_nav>li+li+li>a{
+    color:rgb(251, 155, 155);
+}
+
+.main_nav>li+li+li+li>a{
+    color:rgb(189, 140, 140);
+}
+
+.main_nav>li+li+li+li+li>a{
+    color:rgb(123, 79, 79);
+}
+
+[class*="text"]{
+    color:black;
+}
+
+[class*="biography"]~div{
+    color:rgb(9, 148, 106)
+}
+
+.biography_main_text a{
+    color: rgb(160, 186, 15);
+}
+
+.biography_main_text span>a{
+        color: rgb(234, 24, 143);
+}
+
+[class*="_info"]{
+    font-size: smaller;
+    color: gray;
+}
+
+.em{
+    font-style: italic;
+}
+
+mark{
+    color:darkcyan;
+    font-weight: 200;
+    background-color: aquamarine;
+}
+h1, h2{
+    font-weight: 100;
+}
+
+a{
+    color: rgba(0, 0, 255, 0.699);
+    text-decoration: none;
+}
+
+[class*="bibliography"]>ul>li{
+    color: blueviolet;
+}
+[class*="bibliography"]>ul>li+li+li{
+    color: rgb(197, 135, 255);
+}
+
+#not_working_link{
+    color: darksalmon;
+}
+
+.autor_container{
+    color:pink
+}
+.underlined{
+    text-decoration: underline;
+}
+
+/* я вже замучилась вигадувати кольори :D  */
