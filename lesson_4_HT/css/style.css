@@ -1,0 +1,197 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+/* @import url(https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500&display=swap);
+
+@import url(https://fonts.googleapis.com/css?family=Prompt:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap);
+
+@import url(https://fonts.googleapis.com/css?family=Tangerine:regular,700);
+
+@import url(https://fonts.googleapis.com/css?family=Chakra+Petch:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic&display-swap);
+
+@font-face {
+    font-family: 'Nirvana';
+    src: url(../fonts/nirv_font/Nirvana.woff2) format(woff2), url(../fonts/nirv_font/Nirvana.woff) format(woff);
+    font-weight: 500;
+} */
+
+body {
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.header-title-container {
+    font-family: "Nirvana", serif;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 48px;
+}
+
+[class*="-title"] {
+    text-transform: capitalize;
+    line-height: 2;
+}
+
+[class*="nav"],
+[class*="src"],
+[class*="author"] {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 14px;
+    word-spacing: 20px;
+}
+
+.nav-container {
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.nav-container a {
+    color: rgb(30, 30, 30);
+}
+
+.nav-link {
+    word-spacing: normal;
+}
+
+[class*="src"],
+[class*="author"] {
+    font-size: 12px;
+    color: rgb(162, 161, 161);
+    word-spacing: normal;
+    line-height: 1.8;
+}
+
+.description {
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: lightslategray;
+}
+
+.description a {
+    text-decoration: underline overline;
+    text-decoration-thickness: from-font;
+}
+
+[class*="general"] .main-text a.album-chart-mgzn {
+    font-style: italic;
+    text-decoration: underline dashed 0.2px;
+    text-decoration-color: rgb(0, 0, 0);
+}
+
+[class*="general"] .main-text a {
+    color: rgb(181, 165, 105);
+}
+
+.history-container {
+    font-family: "Tangerine", fantasy;
+    font-weight: 400;
+}
+
+.history-container [class*="title"] {
+    line-height: 1.2;
+}
+
+.history-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+[class*="subsection"] .title-container {
+    font-weight: 700;
+    text-align: center;
+}
+
+.subsection-formation .title-container {
+    font-size: 34px;
+}
+
+.subsection-formation .main-text {
+    /* text-indent: 15px; */
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.subsection-formation .main-text div~div {
+    text-align: right;
+}
+
+.subsection-formation .main-text div~div~div {
+    text-align: justify;
+}
+
+.subsection-releases {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+}
+
+.subsection-releases .title-container {
+    font-size: 28px;
+}
+
+.shadow {
+    color: rgba(0, 0, 0, 0.795);
+    background-color: white;
+    text-shadow:
+        4px 4px 0px white,
+        7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.subsection-releases .main-text div.paragraph-container~div.paragraph-container {
+    font-weight: 500;
+    font-style: italic;
+    text-indent: 15px;
+}
+
+.subsection-releases .main-text div.paragraph-container~div.paragraph-container~div.paragraph-container {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    text-align-last: justify;
+    text-indent: 0;
+}
+
+.subsection-releases .main-text div.paragraph-container~div.paragraph-container~div.paragraph-container~div.paragraph-container {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.wave-deco {
+    text-decoration: underline wavy;
+    text-decoration-color: red;
+    text-decoration-thickness: 1px;
+}
+
+.crossline-deco {
+    text-decoration: line-through 1px orange;
+}
+
+a.name {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+}
+
+.semi {
+    font-weight: 600;
+}
+
+.no-transform {
+    text-transform: none;
+}
+
+hr {
+    border: none;
+    height: 0.5px;
+    color: rgb(211, 211, 211);
+    background-color: rgb(211, 211, 211);
+}
+
+a {
+    color: rgb(138, 181, 246);
+}
