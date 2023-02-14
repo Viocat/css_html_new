@@ -1,0 +1,54 @@
+@import url(reset.css);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap);
+
+body{
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.786;
+    max-width: 1440px;
+    color: #6C757D;
+    margin: 0 auto;
+}
+
+main{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.text-contein{
+    max-width: 816px;
+    margin: 0 auto;
+}
+
+.article-title{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+    color: #212529;
+    margin-bottom: 40px;
+}
+
+.img-article-container{
+    /* афигеть О_О это работает не только для выравнивания списка */
+    font-size: 0;
+}
+.img-inline-container{
+    display: inline-block;
+    max-width: 605px;
+    background-color: #C4C4C4;
+    border-radius: 5px;
+    vertical-align: top;
+}
+
+.big-parts-spacing{
+    margin-bottom: 80px;
+}
+
+.space-between-p{
+    margin: 0 0 25px;
+}
+
+.space-between-imgs{
+    margin-right: 30px;
+}
