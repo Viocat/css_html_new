@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1;
+    color: coral;
+}
+
+.practice-container {
+    padding: 80px 0;
+}
+
+.btn-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    border-left: 1px solid rgb(100, 172, 216);
+    border-right: 1px dotted rgb(100, 172, 216);
+    border-top: 2px solid pink;
+    border-bottom: 2px solid rgb(255, 136, 215);
+    border-radius: 10px 15px 10px;
+    background-color: rgba(255, 150, 250, 0.2);
+    box-shadow: inset 2px 0 10px rgba(128, 0, 128, 0.308);
+    text-shadow: 1px 0px 2px purple;
+}
+
+img {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 50%;
+    outline: 3px double;
+    outline-offset: 3px;
+    margin-bottom: 20px;
+}
+
+[class*="block"] {
+    max-width: 400px;
+    margin: 0 auto 20px;
+    color: white;
+    background-color: darkgray;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 3px 2px 4px rgba(120, 120, 120, 0.573);
+}
+
+[class*="hidden"] {
+    visibility: hidden;
+}
+
+[class*="opacity-"] {
+    opacity: 0.2;
+    color: black;
+}
+
+[class*="dspl-non-"] {
+    display: none;
+}
