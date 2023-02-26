@@ -48,7 +48,7 @@
 
 .lists {
     max-width: 1270px;
-    padding: 150px 10px 150px 15px;
+    padding: 150px 15px 150px 15px;
     margin: 0 auto;
 
     font-family: 'Inter';
@@ -68,31 +68,34 @@
     margin-bottom: 45px;
 }
 
-.lists-container {
+[class*="lists-container"] {
     font-size: 0;
     margin-bottom: 60px;
 }
 
-.lists-container-no-mrgn {
-    font-size: 0;
-    margin-bottom: 0;
-}
-
-ul {
+.list {
     display: inline-block;
     vertical-align: top;
-    width: 33.3%;
-    padding-right: 5px;
+    margin-right: 155px;
 }
 
-li {
+[class*="no-mrgn"] {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.list>ul {
+    width: 310px;
+}
+
+.list>ul>li {
     font-size: 16px;
     margin-bottom: 18px;
 }
 
 .ellipse>li {
     background-image: url(../img/list_marks/Ellipse\ 2744.png);
-    background-position-y: center;
+    background-position-y: 4px;
     background-repeat: no-repeat;
     padding-left: 18px;
 }
@@ -103,7 +106,8 @@ li {
     background-position-y: center;
     background-repeat: no-repeat;
     padding-left: 30px;
-    line-height: 20px;
+    min-height: 20px;
+    padding-top: 2px;
 }
 
 [class*="circle-blue"]>li {
@@ -128,25 +132,34 @@ li {
 
 .product {
     /* background:url(../img/ad-background/speaker\ 1.png) 77% no-repeat,url(../img/ad-background/Vector\ 17.png) 100% 100%/contain no-repeat,url(../img/ad-background/Vector\ 18.png) 100% 100%/contain no-repeat,#F4F7FF; */
-    background: url(../img/ad-background/speaker\ 1.png) 78.5% no-repeat, linear-gradient(114.5deg, rgba(48, 86, 211, 0) 70%, rgb(48, 86, 211, 0.08) 18.69%, rgba(48, 86, 211, 0) 100%), linear-gradient(114.5deg, rgba(48, 86, 211, 0) 65.4%, rgb(48, 86, 211, 0.08) 16.13%, rgba(48, 86, 211, 0) 86.29%), #F4F7FF;
+    /* background: url(../img/ad-background/speaker\ 1.png) 78.5% no-repeat, linear-gradient(114.5deg, rgba(48, 86, 211, 0) 70%, rgb(48, 86, 211, 0.08) 18.69%, rgba(48, 86, 211, 0) 100%), linear-gradient(114.5deg, rgba(48, 86, 211, 0) 65.4%, rgb(48, 86, 211, 0.08) 16.13%, rgba(48, 86, 211, 0) 86.29%), #F4F7FF; */
+    background: linear-gradient(114.5deg, rgba(48, 86, 211, 0) 69%, rgb(48, 86, 211, 0.08) 18.69%, rgba(48, 86, 211, 0) 100%), linear-gradient(114.5deg, rgba(48, 86, 211, 0) 63.4%, rgb(48, 86, 211, 0.08) 16.13%, rgba(48, 86, 211, 0) 86.29%), #F4F7FF;
 }
 
 .product-container {
     max-width: 1200px;
+    min-height: 560px;
     /*1170+15+15*/
-    padding: 0 15px;
+    padding: 81px 15px;
     margin: 0 auto;
+    font-size: 0;
+}
+
+.product-text-container {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 570px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color: #637381
-}
+    
 
-.product-text-container {
-    padding: 145px 0;
-    max-width: 570px;
 }
 
 .product-price {
@@ -175,4 +188,11 @@ li {
     color: white;
     background-color: #3056D3;
     border-radius: 30px;
+}
+
+.product-img{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    width: 36.5%;
 }
