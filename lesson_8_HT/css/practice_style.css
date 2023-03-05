@@ -1,0 +1,79 @@
+@import url(reset.css);
+body{
+    font-family: "Inter";
+    font-size: 20px;
+    line-height: 1.5;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+}
+.some_paragraphs{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.some_paragraphs>p:not(:last-of-type){
+margin-bottom: 10px;
+}
+
+.some_paragraphs a{
+    display: block;
+    margin-bottom: 20px;
+    color:blueviolet;
+    position: relative;
+    max-width: 64px;
+    }
+
+    .some_paragraphs a::before{
+        content: '';
+        display: block;
+        width: 0;
+        background-color: violet;
+        height: 2px;
+        transition: all 0.6s;
+    }
+
+    .some_paragraphs a::after{
+        content: '';
+        display: block;
+        background-color: violet;
+        width: 0px;
+        height: 2px;
+        position: absolute;
+        top:100%; right:0; left:100%;
+        background-color: violet;
+        transition:all 0.6s;
+    }
+
+    .some_paragraphs a:hover::before{
+width: 64px;
+    }
+    .some_paragraphs a:hover::after{
+        width: 64px;
+        left: 0;
+            }
+
+    .some_paragraphs a:visited{
+                color:rgb(178, 139, 214);
+            }
+
+.some_paragraphs>p:nth-child(odd){
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 16px;
+    color: rgb(224, 130, 238);
+}
+
+.some_paragraphs>p:nth-child(3){
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(184, 238, 130);
+}
+.some_paragraphs>a:nth-child(4):focus   {
+    width: 400px;
+    color: rgb(184, 238, 130);
+    outline: 2px dashed blue;
+    max-width: 700px;
+}
