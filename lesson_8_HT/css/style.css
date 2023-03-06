@@ -272,24 +272,17 @@ ul.ellipse>li {
     line-height: 1.5;
 }
 
-.practice_link::after{
-content: '';
-background-color: rgb(155, 187, 223);
-width: 0;
-height: 2px;
-/* для переноса на новую строку */
-display: block;
-margin: 0 auto;
-/* opacity: 0;
-visibility: hidden; */
-transition: all 0.3s;
-}
-.practice_link:hover::after{
-    /* content: ''; */
-    /* background-color: rgb(155, 187, 223); */
-    /* height: 2px; */
+[class*="_link"]::after {
+    content: '';
+    background-color: rgb(155, 187, 223);
+    width: 0;
+    height: 2px;
     /* для переноса на новую строку */
-    /* opacity: 1; */
-    /* visibility: visible; */
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s;
+}
+
+[class*="_link"]:hover::after {
     width: 100%;
-    }
+}
