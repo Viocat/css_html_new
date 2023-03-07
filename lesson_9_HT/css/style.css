@@ -1,0 +1,104 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Inter:300&display=swap);
+/* ========================================================== */
+
+
+/* ======================================================= */
+/*                      ІКОНКИ    (SVG)                         */
+/* ======================================================= */
+
+/* 
+
+це мальнькі, переважно векторні зображення. Вона або несе в собі беспосередньо інформацію, тогбто ми одразу розуміємо що станеться при взаємодії з цим обьєктом.
+Також вони можуть супроводжувати текст і посилює еффект сміслового навантаження від тексту для користувача.
+
+ */
+
+
+ /* ======================================================= */
+/*                      ЕЛЕМЕНТИ ДИЗАЙНУ       (SVG, jpg/png=> webp                   */
+/* ======================================================= */
+
+/* 
+векторні або растрові зображення, можливо з прозорістю, які є частиною дизайну
+ */
+
+  /* ======================================================= */
+/*                      КОНТЕНТНІ ЗОБРАЖЕННЯ    (jpg/png=> webp)                     */
+/* ======================================================= */
+
+/* Зображення які і є контентом сайту (по суті це найчастіше фотографії)
+
+УСІ контентні зображення виводятья тегом img
+
+*/
+body{
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  color: rgb(97 100 111);
+}
+
+.web_grapfics_info{
+  padding: 40px 0;
+}
+
+h2{
+  font-size: 36px;
+  border-bottom: 1px solid rgb(202, 202, 202);
+  width: fit-content;
+  margin: 0 auto 20px;
+  text-transform: capitalize;
+}
+[class*="_container"]{
+  max-width: 1200px;/*1170+15+15*/
+  padding: 30px 15px;
+  margin: 0 auto 60px;
+  text-align: center;
+  /* background-color: rgb(109 127 147 / 71%); */
+  background-color: rgb(2 49 135);
+  border-radius: 15px;
+}
+
+[class*="_container"]:last-of-type{
+  margin-bottom: 10px;
+}
+
+[class*="_block"]:not(:last-child){
+  margin-bottom: 40px;
+}
+
+[class*="icons"] img{
+  vertical-align: middle;
+}
+
+[class*="icons"] img:not(:last-child){
+  margin-right: 20px;
+}
+
+[class*="_images__container"]{
+  background: none;
+}
+
+[class*="_images__block"]{
+  font-size: 0;
+}
+
+[class*="_images__block"] img{
+  vertical-align: middle;
+  border-radius: 15px;
+}
+
+img.round{
+  border-radius: 50%;
+}
+
+[class*="_images__block"] img:not(:last-child){
+  margin-right: 30px;
+}
+.fullscreen_width_img{
+  width: 100%;
+}
+
+
