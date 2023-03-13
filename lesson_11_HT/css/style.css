@@ -158,6 +158,10 @@
     position: relative;
 }
 
+.sub-menu__item--dropable:hover{
+    color:blue;
+}
+
 .sub-menu__item--dropable:hover .sub-menu__content-box {
     visibility: visible;
 }
@@ -300,13 +304,14 @@
     padding: 6px 14px;
     background-color: rgba(48, 86, 211, 1);
     border-radius: 2px;
-    transition: all 0.3s;
+    
 }
 
 .offer__button:hover {
     background-color: rgba(48, 86, 211, 0);
     outline: 1px solid rgba(48, 86, 211, 1);
     color: rgba(48, 86, 211, 1);
+    transition: all 0.3s;
 }
 
 .header__navbar {}
@@ -373,6 +378,9 @@
     margin-bottom: 30px;
     text-transform: capitalize;
     text-decoration: underline;
-    background: rgba(244, 247, 255, 1)
+    background: rgba(244, 247, 255, 1);
+    padding: 10px 0;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
 
 }
