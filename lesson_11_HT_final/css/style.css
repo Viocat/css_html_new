@@ -68,11 +68,12 @@
 
 [class*="__item--dropable"] {
     border-radius: 5px;
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
     position: relative;
 }
 
 [class*="__item--dropable"]:hover {
+    transition: all 0.3s;
     background: rgba(244, 247, 255, 1);
 }
 
