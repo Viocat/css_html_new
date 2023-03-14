@@ -76,7 +76,7 @@
     background: rgba(244, 247, 255, 1);
 }
 
-.categories__item--dropable:hover .categories-menu__box {
+.categories__item--dropable:hover .categories__box-menu {
     visibility: visible;
 }
 
