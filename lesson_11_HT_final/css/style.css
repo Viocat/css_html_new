@@ -19,7 +19,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 50;
 }
 
 [class*="__container"] {
@@ -127,7 +127,7 @@
     background: url(../img/icons/arrow-down.svg) center /100% no-repeat;
 }
 
-.categories-menu__box {
+.categories__box-menu {
     position: absolute;
     padding-top: 40px;
     top: 100%;
