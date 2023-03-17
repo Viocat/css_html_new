@@ -1,0 +1,87 @@
+@import url(reset.css);
+.car{
+    position: absolute;
+    top: -139px;
+    left: -80px;
+    /* display: block; */
+    width: 600px;
+}
+.car-container{
+    position: relative;
+    width: 452px;
+    min-height: 300px;
+    background-color: rgb(117, 255, 161);
+    /* background: url(../img/car.png) center; */
+    /* background-size: contain; */
+}
+.stoika{
+    position: absolute;
+    bottom: 41px;
+    width: 85px;
+    height: 70px;
+    background-color: #60bb87ad;
+    border-radius: 50%;
+    transform-origin: center;
+}
+.stoika1{
+    left: 49px;
+}
+.stoika2{
+    right: 49px;
+    width: 100px;
+    transform: skew(6deg, 0deg);
+}
+.krilo-box{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    perspective: 100px;
+}
+
+.krilo{
+    position: absolute;
+    bottom: 52px;
+    left: 41px;
+    width: 100px;
+    height: 47px;
+    border-top: 9px solid #00ffff75;
+    border-right: 14px solid #00800066;
+    /* border-left: 7px solid #00800085; */
+    border-radius: 59% 49% 0% 0% / 102% 116% 0% 0%;
+    transform: skew(5deg,0deg);
+}
+.krilo-plus{
+    position: absolute;
+    bottom: 43px;
+    left: 48px;
+    width: 100px;
+    height: 46px;
+    border-left: 11px solid #00800085;
+    border-radius: 49% 1% 0% 0%;
+    transform: skew(-26deg,16deg);
+}
+
+.krilo-box2{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    perspective: 80px;
+}
+.krilo2 {
+    position: absolute;
+    bottom: 35px;
+    right: 24px;
+    width: 137px;
+    height: 58px;
+    border: 16px solid #00800054;
+    transform: rotate(-0.5deg);
+    transform: rotateX(20deg);
+    /* border-top: 9px solid #00ffff75; */
+    /* border-right: 14px solid #00800066; */
+    /* border-left: 7px solid #00800085; */
+    /* border-radius: 59% 49% 0% 0% / 102% 116% 0% 0%; */
+    /* transform: skew(5deg,0deg); */
+    
+}
+.krilo2-plus {
+}
