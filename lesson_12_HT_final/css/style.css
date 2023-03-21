@@ -7,6 +7,10 @@
     font-display: swap;
 }
 
+body{
+    padding:1% 0;
+}
+
 .wrapper__car-container{
     position: relative;
     padding: 90px 0px;
