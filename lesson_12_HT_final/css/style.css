@@ -1,5 +1,6 @@
 @import url(reset.css);
-@font-face{
+
+@font-face {
     font-family: 'Striverx';
     src: url(../fonts/Striverx.woff2) format(woff2), url(../fonts/Striverx.woff) format(woff);
     font-weight: normal;
@@ -7,11 +8,13 @@
     font-display: swap;
 }
 
-body{
-    padding:1% 0;
+body {
+    padding: 1% 0;
 }
 
-.wrapper__car-container{
+.wrapper {}
+
+.wrapper__car-container {
     position: relative;
     padding: 90px 0px;
     width: 552px;
@@ -35,7 +38,8 @@ body{
     top: 54px;
     left: 149px;
 }
-.rear-carrier{
+
+.rear-carrier {
     width: 255px;
     height: 48px;
 }
@@ -58,13 +62,14 @@ body{
     right: 9px;
     transform: rotate(4deg);
 }
-.binding{
+
+.binding {
     width: 8.5px;
     height: 4.5px;
     background: linear-gradient(180deg, grey 35%, black);
 }
 
-.rear-carrier__leg1{ 
+.rear-carrier__leg1 {
     position: absolute;
     top: 7px;
     left: 24px;
@@ -76,13 +81,14 @@ body{
     background: linear-gradient(90deg, grey 35%, black);
     border-radius: 15%;
 }
-.rear-carrier__leg2{ 
+
+.rear-carrier__leg2 {
     position: absolute;
     top: 7px;
     left: 124px;
 }
 
-.rear-carrier__leg3{ 
+.rear-carrier__leg3 {
     position: absolute;
     top: 7px;
     right: 18px;
@@ -95,45 +101,47 @@ body{
     border-radius: 15%;
 }
 
-.rear-carrier__beam{
+.rear-carrier__beam {
     width: 240px;
-        position: absolute;
-        top: 11px;
-        left: 11px;
+    position: absolute;
+    top: 11px;
+    left: 11px;
 }
 
-.beam{
+.beam {
     width: 248px;
     height: 2px;
     background: linear-gradient(180deg, grey -4%, black);
 }
+
 /* ----------------------------- */
-.rear-ball{
+.rear-ball {
     width: 4px;
     height: 4px;
     border-radius: 50%;
     background: radial-gradient(circle at 3px 2px, #e7e7e7, #141414);
 }
 
-.rear-carrier__binding-ball1{
+.rear-carrier__binding-ball1 {
     position: absolute;
     top: 10px;
     left: 23px;
 }
 
-.rear-carrier__binding-ball2{
+.rear-carrier__binding-ball2 {
     position: absolute;
     top: 10px;
     left: 123.3px;
-    
+
 }
-.rear-carrier__binding-ball3{
+
+.rear-carrier__binding-ball3 {
     position: absolute;
     top: 10px;
     right: 16.5px;
 }
 
-.rear-carrier__tray{
+.rear-carrier__tray {
     width: 244px;
     height: 7px;
     position: absolute;
@@ -189,9 +197,10 @@ body{
     position: absolute;
     top: 2px;
     left: 26px;
-    
+
 }
-.roof{
+
+.roof {
     width: 379px;
     height: 73px;
     transform: perspective(171px)rotateX(12deg) skew(0deg, 0deg);
@@ -200,7 +209,7 @@ body{
     background: linear-gradient(90deg, rgba(198, 200, 202, 1) 0%, rgba(255, 255, 255, 1) 8%, rgba(255, 255, 255, 1) 77%, rgba(198, 200, 202, 1) 100%);
 }
 
-.car-top__roof-gradient{
+.car-top__roof-gradient {
     position: absolute;
     top: 2px;
     left: 26px;
@@ -208,8 +217,9 @@ body{
     height: 73px;
     background: linear-gradient(182deg, #676767ed 12%, #d8dadab0 22%, #ffffff00 59%);
 }
+
 /* первое окно */
-.car-top__first-window{
+.car-top__first-window {
     position: absolute;
     top: 30px;
     left: 21px;
@@ -251,7 +261,7 @@ body{
     transform: perspective(127px) rotateX(4deg) skewX(1deg);
 }
 
-.car-top__footer-part{
+.car-top__footer-part {
     position: absolute;
     bottom: 0;
     right: 2px;
@@ -271,9 +281,9 @@ body{
     perspective: 84px;
 }
 
-.window2{}
+.window2 {}
 
-.window2__position{
+.window2__position {
     margin-left: 5px;
 }
 
@@ -311,6 +321,7 @@ body{
     transform: skew(-14deg, -0.5deg) rotateX(32deg);
     background-color: #d4d4d4;
 }
+
 /* --руль -- */
 .steering-wheel {
     position: relative;
@@ -366,6 +377,7 @@ body{
     transform: rotate(69deg) skewX(-66deg);
     border-radius: 50%;
 }
+
 /* --- */
 .seccond-glass__window-gradient {
     position: absolute;
@@ -388,8 +400,9 @@ body{
     height: 42px;
 }
 
-.window3{}
-.window3__glass{}
+.window3 {}
+
+.window3__glass {}
 
 .third-glass {
     position: relative;
@@ -444,11 +457,12 @@ body{
     width: 115px;
     height: 43px;
     perspective-origin: 100%;
-    rotate: 2.5deg;
+    transform: rotate(2.5deg);
 }
 
-.window4{}
-.window4_glass{}
+.window4 {}
+
+.window4_glass {}
 
 .fourth-glass {
     position: relative;
@@ -525,7 +539,7 @@ body{
     background: #e7e6ca;
 }
 
-.wheel__disk-part1{
+.wheel__disk-part1 {
     position: absolute;
     bottom: 3.25px;
     left: 3px;
@@ -566,7 +580,7 @@ body{
 
 /* ---------------------------------- */
 /* -- крылья авто -- */
-.car__fender-left{
+.car__fender-left {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -629,7 +643,7 @@ body{
     box-shadow: inset 1px 2px 3px #fdfdfd4d;
 }
 
-.car__rear-bumper{
+.car__rear-bumper {
     position: absolute;
     bottom: 46px;
     right: 2px;
@@ -642,9 +656,9 @@ body{
 
 /* -------------------------------------------------- */
 /* -- нижняя часть кузова -- */
-.car__bottom-container{} 
+.car__bottom-container {}
 
-.red-body{}
+.red-body {}
 
 .red-body__part1 {
     position: absolute;
@@ -708,6 +722,7 @@ body{
     background-color: #e92b2d;
     transform: skew(0deg, 0deg);
 }
+
 .red-body__part7 {
     position: absolute;
     bottom: 16.5%;
@@ -718,8 +733,9 @@ body{
     transform: perspective(30px) rotateX(-5deg) skew(-9deg, 0deg);
     border-radius: 1px;
 }
+
 /* черная резинка кузова */
-.car__body-rubber{
+.car__body-rubber {
     position: absolute;
     bottom: 18.5%;
     height: 1px;
@@ -772,7 +788,7 @@ body{
 /* -- ручка дверцы -- */
 
 .car__handle-position {
-     
+
     position: absolute;
     bottom: 130.5px;
     left: 117px;
@@ -844,7 +860,8 @@ body{
     top: 0;
     left: 0;
 }
-.mirror{
+
+.mirror {
     width: 30px;
     height: 31px;
 }
@@ -873,6 +890,7 @@ body{
     box-shadow: inset -1px 1px 1px #fff;
     transform: rotate(-12deg) skew(1deg, -23deg);
 }
+
 .mirror__circle-part2 {
     position: absolute;
     bottom: 5px;
@@ -915,10 +933,12 @@ body{
     top: 50px;
     left: 149px;
 }
-.anterior-carrier{
+
+.anterior-carrier {
     width: 255px;
     height: 48px;
 }
+
 .anterior-carrier__binding1 {
     position: absolute;
     bottom: 5.8px;
@@ -935,7 +955,8 @@ body{
     position: absolute;
     bottom: 2px;
     right: 9px;
-    transform: rotate(4deg);}
+    transform: rotate(4deg);
+}
 
 .anterior-carrier__leg1 {
     position: absolute;
@@ -979,6 +1000,7 @@ body{
     top: 9.5px;
     left: 128.3px;
 }
+
 .anterior-carrier__binding-ball3 {
     position: absolute;
     top: 9.5px;
@@ -1002,9 +1024,10 @@ body{
     position: absolute;
     top: 0;
     right: 48px;
-   
+
 }
-.valise{
+
+.valise {
     width: 126px;
     height: 55px;
 }
@@ -1078,7 +1101,7 @@ body{
     right: 32px;
 }
 
-.valise-handle{
+.valise-handle {
     width: 46px;
     height: 13px;
     background-color: #371100;
@@ -1113,6 +1136,7 @@ body{
     background-color: #371100;
     border-radius: 50%;
 }
+
 /* --------------------------------------------------------------------- */
 /* -- зонт -- */
 
@@ -1120,7 +1144,7 @@ body{
     position: absolute;
     top: 12px;
     left: 115px;
-overflow: clip;
+    overflow: clip;
     width: 302px;
     height: 40px;
 }
@@ -1149,7 +1173,7 @@ overflow: clip;
     height: 3px;
     background-color: grey;
     border-radius: 3px;
-    rotate: -4.5deg;
+    transform: rotate(-4.5deg);
 }
 
 .umbrella__fabric1 {
@@ -1163,7 +1187,7 @@ overflow: clip;
     overflow: clip;
 }
 
-.umbrella__stripe1{
+.umbrella__stripe1 {
     width: 12px;
     height: 19px;
     background: #ffffff;
@@ -1173,7 +1197,7 @@ overflow: clip;
     transform: perspective(10px) rotateY(0deg) skew(-15deg, -8deg);
 }
 
-.umbrella__stripe2{
+.umbrella__stripe2 {
     width: 7px;
     height: 22px;
     background: #ffffff;
@@ -1182,7 +1206,8 @@ overflow: clip;
     bottom: -4px;
     transform: perspective(10px) rotateY(0deg) skew(-2deg, -8deg);
 }
-.umbrella__stripe3{
+
+.umbrella__stripe3 {
     width: 14px;
     height: 27px;
     background: #ffffff;
@@ -1192,7 +1217,7 @@ overflow: clip;
     transform: perspective(10px) rotateY(0deg) skew(-20deg, -8deg);
 }
 
-.umbrella__stripe4{
+.umbrella__stripe4 {
     width: 7px;
     height: 31px;
     background: #ffffff;
@@ -1202,7 +1227,7 @@ overflow: clip;
     transform: perspective(10px) rotateY(0deg) skew(5deg, -8deg);
 }
 
-.umbrella__stripe5{
+.umbrella__stripe5 {
     width: 13px;
     height: 35px;
     background: #ffffff;
@@ -1235,7 +1260,7 @@ overflow: clip;
 /* ----------------------------------------------- */
 /* -- надпись на машинке -- */
 
-.car__letter1{
+.car__letter1 {
     position: absolute;
     bottom: 56px;
     left: 178px;
@@ -1243,10 +1268,10 @@ overflow: clip;
     font-family: 'Striverx';
     font-size: 89px;
     font-weight: normal;
-    rotate: -21deg;
+    transform: rotate(-21deg);
 }
 
-.car__letter2{
+.car__letter2 {
     position: absolute;
     bottom: 72px;
     left: 223px;
@@ -1254,13 +1279,14 @@ overflow: clip;
     font-family: 'Striverx';
     font-size: 79px;
     font-weight: normal;
-    rotate: -21deg;
+    transform: rotate(-21deg);
 }
 
-.wrapper__link-container{
+.wrapper__link-container {
     text-align: center;
 }
-.link{
+
+.link {
     font-family: 'Striverx';
     font-size: 42px;
     font-weight: normal;
@@ -1268,6 +1294,6 @@ overflow: clip;
     text-decoration-thickness: 0.2px;
 }
 
-.link:hover{
+.link:hover {
     color: #135772;
 }
