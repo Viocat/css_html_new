@@ -1,0 +1,249 @@
+@import url(reset.css);
+@import url(https://fonts.googleapis.com/css?family=Sono:200,300,regular,500,600,700,800);
+@font-face{
+    font-family: 'Striverx';
+    src: url(../fonts/Striverx.woff2) format(woff2), url(../fonts/Striverx.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-family: "Sono";
+    font-size: 24px;
+    font-weight: 400;
+    color: aliceblue;
+}
+.wrapper{
+    display: block;
+    overflow-x: clip;
+}
+
+.wrapper__link-container{
+    text-align: center;
+    border-radius: 50%;
+    margin: 30px auto;
+}
+.link{
+    display: inline-block;
+    font-family: 'Striverx';
+    font-size: 50px;
+    font-weight: normal;
+    color:  rgb(255, 68, 0);
+    
+}
+
+.link:hover{
+    color: #135772;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+    transition: all 0.6s;
+}
+.items{
+    display: block;
+    width: 100%;
+    text-align-last: justify;
+}
+.items>div{
+    display: inline-block;
+    vertical-align: top;
+    text-align-last: center;
+}
+[class*="__container"]{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.093);
+    margin: 25px;
+}
+div[class*="__block"]{
+   
+    width: 200px;
+    height: 200px;
+    background: #135772;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.items {
+    padding: 15px;
+    background: none;
+    text-align: justify;
+}
+
+.translate__container:hover .translate__block{
+    transform: translate(20px, 20px);
+     transition: all 0.7s;
+}
+
+.scale__container:hover .scale__block{
+    transform: scale(2); 
+      transform: scale(0.5);
+    transition: all 0.7s;
+}
+
+.scale-x-y__container:hover .scale-x-y__block{
+    transform: scale(1,0.5); 
+     transition: all 0.7s;
+}
+
+.scale-mirror-x__container:hover .scale-mirror-x__block{
+    transform: scale(-1, 1) ; /*(отрицательное значение по оси x - перевернёт картинку по горизонтали)*/
+    transition: all 2s;
+}
+
+.scale-mirror-y__container:hover .scale-mirror-y__block{
+
+transform: scale(1, -1);
+transition: all 2s;
+}
+
+.rotate__container:hover .rotate__block{
+    transform: rotate(360deg);
+    transition: all 0.4s;
+}
+
+
+.rotate-x__container:hover .rotate-x__block{
+    transform: rotateX(360deg);
+    transition: all 3s;
+}
+
+.rotate-y__container:hover .rotate-y__block{
+    transform: rotateY(360deg);
+    transition: all 3s;
+}
+
+.skew__container:hover .skew__block{
+    transform: skew(10deg, 0deg);
+    transition: all 0.4s;
+}
+
+.matrix__container:hover .matrix__block{
+    transform: matrix(1.5, 1, 0, 1,0 ,0);
+    transition: all 0.4s;
+}
+
+.text{
+    display: block;
+    text-align: center;
+    width: 100%;
+    background: none;
+    color: #135772;
+}
+
+.multi__container:hover .multi__block{
+    transform: translate(50px, 50px) scale(0.5) rotate(45deg);
+    transition: all 0.5s;
+    background: rgb(255, 68, 0);
+}
+
+.transform-origin__block{
+    transform-origin: 100% 50%; 
+    transform: rotate(0deg);
+}
+
+.transform-origin__container:hover .transform-origin__block{
+    transform: rotate(-30deg);
+    transition: all 0.4s;
+
+}
+
+.origin-default__block {
+    transform: rotate(0deg);
+}
+
+.origin-default__container:hover .origin-default__block {
+    transform: rotate(-30deg);
+    transition: all 0.4s;
+}
+
+.perspective__container{
+    perspective: 300px;
+}
+
+.perspective__container:hover .perspective__block {
+     transform: rotateX(50deg);
+    transition: all 0.5s;
+}
+
+.perspective-origin__container {
+    perspective: 300px;
+    perspective-origin: 50%;
+    /* по умолчанию = center или 50% */
+
+    /* изменим: */
+    perspective-origin: 10px;
+}
+.perspective-origin__container:hover .perspective-origin__block {
+    transform: rotateX(50deg);
+    transition: all 0.5s;
+}
+
+.translate-3D__container{
+    perspective: 400px;
+}
+.translate-3D__container:hover .translate-3D__block {
+    transform: translate3D(20px, 20px, 100px);
+    transition: all 0.5s;
+}
+ 
+.scale-3D__container:hover .scale-3D__block{
+    transform: scale3d(1.5, 1.5 , 5);
+    transition: all 0.4s;
+}
+
+.rotate-3D__container:hover .rotate-3D__block {
+    transform: rotate3d(1,1,1,55deg);
+    transition: all 0.4s;
+}
+
+.multi-3D__container:hover .multi-3D__block{
+    transform: translate3d(20px,20px, 20px) rotate3d(1,1,1,50deg);
+    transition: all 0.4s;
+}
+
+.transform-style-preserve3D__container{
+    perspective: 200px;
+    transform-style: preserve-3d;
+}
+.transform-style-preserve3D__container:hover .transform-style-preserve3D__block {
+    transform: rotateY(50deg);
+    transition: all 0.4s;
+}
+
+.flip{
+
+}
+.flip__container{
+    position: relative;
+    transition: all 1s;
+    transform-style: preserve-3d;
+    margin: 0 auto;
+}
+
+.flip__front,
+.flip__back{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ padding: 10px 0;
+ text-align: center;
+}
+
+.flip__front{
+z-index: 2;
+transform: rotateY(0deg);
+background-color: #135772;
+
+backface-visibility: hidden; /*спрятали оборотную сторону обьекта flip__front*/
+}
+
+.flip__back{
+    transform: rotateY(-180deg);
+    background-color: rgb(255, 68, 0);
+}
+
+.flip:hover .flip__container{
+    transform: rotateY(180deg);
+}
