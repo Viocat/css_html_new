@@ -109,8 +109,9 @@ body {
 .card__image img {
     border-radius: 5px;
     width: 100%;
-    min-height: 250px;
+    height: 250px;
     object-fit: cover;
+    object-position: center;
     transition: all 0.4s;
 }
 
