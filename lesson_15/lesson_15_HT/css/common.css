@@ -1,0 +1,21 @@
+@import url(reset.css);
+.page {
+    margin: 100px 0;
+}
+.page>*:not(:last-child){
+    margin-bottom: 100px;
+}
+[class*="__container"] {
+    display: flex;
+    flex-direction: column;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+[class*="__title"]{
+    text-transform: capitalize;
+}
+[class*="__image-link"]:hover img{
+transform: scale(1.04);
+}
