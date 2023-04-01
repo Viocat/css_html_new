@@ -1,6 +1,6 @@
 @import url(reset.css);
 .page {
-    margin: 100px 0;
+    padding: 100px 0;
 }
 .page>*:not(:last-child){
     margin-bottom: 100px;

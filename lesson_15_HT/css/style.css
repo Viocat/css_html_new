@@ -185,11 +185,11 @@ body {
     flex: 0 1 100%;
 }
 
-.page__achivements {}
+.page__achievements {}
 
-.achivements {}
+.achievements {}
 
-.achivements__container {
+.achievements__container {
     gap: 40px;
 }
 
