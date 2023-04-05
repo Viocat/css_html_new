@@ -1,0 +1,270 @@
+@import url("reset.css");
+@import url("common.css");
+@import url(https://fonts.googleapis.com/css?family=Oswald:regular,500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular&display=swap);
+
+body {}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper>main {
+	flex-grow: 1;
+}
+
+/* ---------------------------- */
+
+.page {
+	padding: 80px 0;
+}
+
+.page__crips-block {}
+
+[class*="-block"] {
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.crips {
+	max-width: 636px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.25;
+	/* 20/16 */
+	color: #3F3F3F
+}
+
+.crips__form {}
+
+.form-crips {}
+
+.form-crips:not(:last-child) {
+	padding-bottom: 36px;
+	border-bottom: 1px solid #C4C4C4;
+}
+
+.form-crips__address-title {
+	margin-bottom: 34px;
+}
+
+.title-crips {
+	font-family: 'Oswald';
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 2.83333333;
+	/* 68/24 */
+	text-transform: capitalize;
+	color: #000000;
+}
+
+.form-crips__fields {}
+
+.form-crips__field {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin-bottom: 23px;
+}
+
+.form-crips__field:not(:last-child){
+	margin-bottom: 25px;
+}
+
+.form-crips__field_no-label{
+	justify-content: flex-end;
+}
+
+label {
+	text-transform: capitalize;
+	flex: 0 0 145px;
+}
+.form-crips__field label:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.required-mark{
+	color: rgba(235,87,87,1);
+}
+
+.form-crips__input {
+	flex: 0 1 451px;
+	height: 44px;
+	border: 1px solid rgba(196, 196, 196, 1);
+	padding: 0 16px;
+}
+
+.form-crips__input:focus{
+	outline: 2px solid #C4C4C4;
+}
+
+.form-crips__notification {
+	max-width: 514px;
+	padding: 10px 0;
+	font-size: 14px;
+	line-height: 1.43;
+	/* 20/14 */
+	color: #828282;
+}
+.form-crips__notification:not(:last-child){
+	margin-bottom: 14px;
+}
+
+.form-crips__login-btn:not(:last-child) {
+	margin-right: 25px;
+}
+
+.crips-button {
+	height: 50px;
+	width: 120px;
+	background-color: rgba(0, 0, 0, 1);
+	font-family: 'Oswald';
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.5;
+	/* 21/14 */
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+
+}
+.crips-button:hover{
+	background: #EB5757;
+}
+.form-crips__pswrd-reset {
+font-size: 14px;
+line-height: 1.43;
+display: inline-block;
+text-transform: capitalize;
+color: #0F6DB1;
+}
+
+.form-crips__pswrd-reset:hover{
+	text-decoration: underline;
+}
+
+.crips__form--shipping-u-data{
+	padding-top:39px;
+}
+
+
+.form-crips__methods-radio{
+	margin-bottom: 24px;
+}
+
+.methods {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.methods__title{
+	margin-bottom: 18px;
+}
+
+.methods__radio {
+	position: relative;
+	display: flex;
+	flex: 0 1 100%;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.methods__radio:first-of-type {
+	border-top: 1px solid black;
+}
+
+.methods__input-radio {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.methods__input-radio:hover + .methods__label-price{
+	color: #3F3F3F;
+}
+
+.methods__input-radio:hover + .methods__label-price::before{
+	border: 1px solid #3F3F3F;
+}
+
+.methods__input-radio:focus-visible + .methods__label-price{
+	color: #3f3f3f;
+	background-color: bisque;
+}
+
+.methods__input-radio:focus-visible + .methods__label-price::before{
+	border: 1px solid #3F3F3F;
+}
+
+.methods__input-radio:checked + .methods__label-price{
+	color: #000000;
+}
+
+.methods__input-radio:checked + .methods__label-price::before{
+	border: 3px solid #000000;
+}
+
+[class*="methods__label"]{
+	flex: 0 1 134px;
+	padding: 12px 0;
+}
+
+.methods__label-price {
+	color: rgba(130, 130, 130, 1);
+	margin-right: 8.9%;
+}
+
+.methods__label-price::before{
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px solid #828282;
+	display: inline-block;
+	margin-right: 13px;
+}
+
+.separator{
+	display: flex;
+	flex-direction: row;
+	flex: 0 1 443px;
+	height: 1px;
+	background-color: rgba(196, 196, 196, 1);
+}
+
+.form-crips__nav-btns{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/* ------------------------------------ */
+/* cкрываем placeholder при focuse */
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+:focus::-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent;
+}
+/* ------------------------------------ */
+
