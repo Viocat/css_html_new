@@ -1,0 +1,23 @@
+.title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6; /* 40/25 */
+}
+
+[class*="-block"] {
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+[class*="-block"]:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+[class*="methods__label"] {
+	flex: 0 1 134px;
+	padding: 12px 0;
+}
+
+.no-text-transform{
+	text-transform: none;
+}
