@@ -452,3 +452,7 @@ label {
 	color: #FFFFFF;
 	text-transform: capitalize;
 }
+
+.billing-form__button:hover{
+	background: #3056D3;
+}
