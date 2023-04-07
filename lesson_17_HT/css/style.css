@@ -1125,3 +1125,19 @@ label {
     }
 
 }
+
+@media (hover:hover){
+    .billing-form__button:hover {
+        background: #3056D3;
+    }
+    .form-crips__back-link-btn:hover {
+        color: #000000;
+        text-decoration: underline;
+    }
+    .form-crips__pswrd-reset:hover {
+        text-decoration: underline;
+    }
+    .crips-button:hover {
+        background: #EB5757;
+    }
+}
