@@ -1025,7 +1025,13 @@ label {
 
 .billing-form__cupon {}
 
-.billing-form__cupon-title {}
+.billing-form__cupon-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #212B36;
+    margin-bottom: 25px;
+}
 
 .billing-form__cupon-field {
     display: flex;
@@ -1065,6 +1071,7 @@ label {
     .page__taiGrids-block {
         padding-top: 30px;
     }
+
     .billing-form__input,
     .billing-form__select,
     .billing-form__textarea {
@@ -1074,7 +1081,8 @@ label {
     .billing-form__checkboxes:not(:last-child) {
         margin-bottom: 40px;
     }
-    .billing-form__button{
+
+    .billing-form__button {
         margin: 0 auto;
     }
 }
@@ -1126,17 +1134,20 @@ label {
 
 }
 
-@media (hover:hover){
+@media (hover:hover) {
     .billing-form__button:hover {
         background: #3056D3;
     }
+
     .form-crips__back-link-btn:hover {
         color: #000000;
         text-decoration: underline;
     }
+
     .form-crips__pswrd-reset:hover {
         text-decoration: underline;
     }
+
     .crips-button:hover {
         background: #EB5757;
     }
