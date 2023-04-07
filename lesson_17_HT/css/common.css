@@ -1,0 +1,46 @@
+@import url(reset.css);
+.page {
+    padding: 50px 0;
+}
+.page>*:not(:last-child){
+    margin-bottom: 100px;
+}
+[class*="__container"] {
+    /* display: flex;
+    flex-direction: column; */
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+[class*="__title"]{
+    text-transform: capitalize;
+}
+[class*="__image-link"]:hover img{
+transform: scale(1.04);
+}
+
+/* Forms */
+.title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6; /* 40/25 */
+}
+
+[class*="-block"] {
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+[class*="-block"]:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+[class*="methods__label"] {
+	flex: 0 1 134px;
+	padding: 12px 0;
+}
+
+.no-text-transform{
+	text-transform: none;
+}
